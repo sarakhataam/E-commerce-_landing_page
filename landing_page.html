@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="cssGrid" content="">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="landing_page.css">
+</head>
+<body>
+    <div class="container">
+        <div class="page header">
+            <img class="logo" src="./imgs/logo.png" alt="Logo">
+            <div class="nav_menu">
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+        
+        <div class="page search">
+            <input type="text" id="searchInput" placeholder="Search by product name">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+        
+
+        <div class="page showproduct">
+            <div class="slider-container">
+                <div class="slider">
+                </div>
+            </div>
+        </div>
+        
+        <div class="page footer">
+            <div class="foot_links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="social_icons">
+                <a href="#" class="social_icon"><img src="./imgs/facebook.png" alt="Facebook"></a>
+                <a href="#" class="social_icon"><img src="./imgs/twit.png" alt="Twitter"></a>
+                <a href="#" class="social_icon"><img src="./imgs/insta.png" alt="Instagram"></a>
+            </div>
+
+        </div>
+        
+        
+
+    </div>
+    <script src="landing_page.js"></script>
+</body>
