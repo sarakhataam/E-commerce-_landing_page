@@ -39,32 +39,33 @@
     color: #fff;
     padding: 20px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .logo {
-    width: 200px; 
+    width: 200px;
     height: auto;
-    margin-right: 20px; 
-    border-radius: 50%; 
-    overflow: hidden; 
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .links {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
+    display: flex;
 }
 
 .links li {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .links li a {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold; 
-    font-size: 25px; 
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .links li a:hover {
@@ -115,7 +116,7 @@
     color: #000;
 }
 
-/* Media query for screens less than 768px */
+
 @media (max-width: 768px) {
     .nav_menu .links {
         display: none;
@@ -142,27 +143,31 @@
     }
 }
 
-.slider-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Adjust the gap between products */
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-
-.slide {
+.slider .slide {
     text-align: center;
     padding: 20px;
+    width: 25%;
+    min-height: 425px;
+    margin-bottom: 50px;
 }
 
 .slide img {
     max-width: 100%;
-    height: auto;
-    border: 2px solid transparent; /* Initial border */
-    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+    min-height: 100% !important;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
 }
 
 .slide:hover img {
-    border-color: #DF5725; /* Border color on hover */
+    border-color: #DF5725;
+   
 }
 
 .slide img {
@@ -191,6 +196,7 @@
     margin: 0 20px;
     font-size: 16px;
 }
+
 .social_icons {
     margin-top: 20px;
 }
@@ -205,6 +211,7 @@
     height: 30px;
     border-radius: 50%;
 }
+
 @media (max-width: 768px) {
     .foot_links {
         flex-wrap: wrap;
@@ -241,7 +248,3 @@
 .page.search button:hover {
     background-color: #C44D1D;
 }
-
-
-
-
